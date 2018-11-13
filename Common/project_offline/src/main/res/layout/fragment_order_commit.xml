@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_order_commit_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/fragment_order_commit_tv_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:textColor="@color/accent_orange"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/fragment_order_commit_tv_deduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/fragment_order_commit_tv_total_amount"
+                android:layout_toRightOf="@id/fragment_order_commit_tv_total_amount"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fragment_order_commit_btn_commit"
+            style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+            android:layout_weight="3"
+            android:text="@string/ok"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_order_commit_bottom_layout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_group_member_info" />
+
+            <LinearLayout
+                android:id="@+id/fragment_order_commit_info_container1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_commit_info_course_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_commit_info_course_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_commit_info_site_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_commit_info_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.project.offline.view.order.OrderConfirmTimeDisplayer
+                    android:id="@+id/fragment_order_commit_info_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_order_commit_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12" />
+
+            <com.qingqing.base.view.item.SimpleTitleValueActionView
+                android:id="@+id/fragment_order_commit_info_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

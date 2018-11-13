@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleLayout">
+        <attr name="android:maxWidth" />
+        <attr name="android:maxHeight" />
+    </declare-styleable>
+
+    <attr name="direction">
+        <flag name="left" value="0x0" />
+        <flag name="right" value="0x1" />
+    </attr>
+
+    <declare-styleable name="BubbleImageView">
+        <attr name="direction" />
+        <attr name="android:maxWidth" />
+        <attr name="android:maxHeight" />
+        <attr name="android:minWidth" />
+        <attr name="android:minHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleImageViewV2">
+        <attr name="direction" />
+        <attr name="android:maxWidth" />
+        <attr name="android:maxHeight" />
+        <attr name="android:minWidth" />
+        <attr name="android:minHeight" />
+    </declare-styleable>
+</resources>

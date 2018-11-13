@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dimen_48"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout_sel_optional_time_count_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/shape_rect_white_solid_top_left_line">
+
+        <ImageView
+            android:id="@+id/layout_sel_optional_time_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:paddingBottom="@dimen/dimen_6"
+            android:paddingTop="@dimen/dimen_6"
+            android:src="@drawable/icon_buy_list_gra" />
+
+        <com.qingqing.base.view.badge.StrokeBadgeView
+            android:id="@+id/layout_sel_optional_time_badge_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/layout_sel_optional_time_img"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_toRightOf="@id/layout_sel_optional_time_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layout_sel_optional_time_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_sel_time_total_count"
+                android:textColor="@color/gray_dark_deep"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/layout_sel_optional_time_sel_count"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_3"
+                android:text="@string/text_sel_time_selected_count"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/layout_sel_optional_time_btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_rect_orange_solid_selector"
+        android:enabled="false"
+        android:text="@string/text_submit"
+        android:textColor="@color/whole_solid_button_text_selector"
+        android:textSize="@dimen/font_size_18" />
+
+</LinearLayout>

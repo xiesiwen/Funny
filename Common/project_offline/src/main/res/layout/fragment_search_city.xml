@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.qingqing.base.view.editor.LimitEditText
+            android:id="@+id/et_search_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/round_full_corner_rect_white_solid_bg"
+            android:drawableLeft="@drawable/icon_search_tip"
+            android:gravity="start"
+            android:hint="@string/txt_search_city"
+            android:padding="@dimen/dimen_5"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_light"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingRight="@dimen/dimen_10"
+            android:text="@string/cancel"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/gray_dark"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/gray_light" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_select_city_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/city_select_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:background="@color/white"></ListView>
+
+        <com.qingqing.base.view.BladeView
+            android:id="@+id/blade_view"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dimen_6" />
+
+        <TextView
+            android:id="@+id/tv_pinned"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/select_city_head_item_tip_height"
+            android:paddingLeft="@dimen/dimen_12"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/font_size_12"
+            android:background="@color/gray_light_light"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_search_city_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/city_select_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        android:background="@color/white"
+        android:visibility="invisible"></ListView>
+
+</LinearLayout>

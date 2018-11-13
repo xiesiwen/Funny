@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_5"
+    android:paddingRight="@dimen/dimen_5">
+
+    <!--app:imageDefaultResId="@drawable/icon_order_headportrait"-->
+    <com.qingqing.base.view.AsyncImageViewV2
+        android:id="@+id/aiv_member_head"
+        style="@style/DefaultCircleHeadStyle" />
+
+    <TextView
+        android:id="@+id/tv_member_chief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:background="@drawable/shape_big_corner_rect_orange_solid"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingTop="@dimen/dimen_1"
+        android:paddingBottom="@dimen/dimen_1"
+        android:paddingRight="@dimen/dimen_2"
+        android:text="@string/groupon_chief_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12" />
+</FrameLayout>

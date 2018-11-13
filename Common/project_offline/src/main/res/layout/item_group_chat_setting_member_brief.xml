@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dimen_5"
+        >
+
+        <com.qingqing.base.view.AsyncImageViewV2
+            android:id="@+id/iv_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            style="@style/DefaultRoundCornerHeadStyle"
+            tools:src="@drawable/ic_share03"/>
+
+       <ImageView
+           android:id="@+id/iv_admin_tag"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="left|top"
+           android:src="@drawable/icon_chat_gly"
+           android:visibility="gone"
+           tools:visibility="visible"
+           />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        tools:text="昵称"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+
+</LinearLayout>

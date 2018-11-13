@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_group_member_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_6">
+
+    <com.qingqing.base.view.AsyncImageViewV2
+        android:id="@+id/item_group_member_avatar"
+        style="@style/DefaultRoundCornerHeadStyle"
+        android:layout_marginLeft="@dimen/dimen_12" />
+
+    <TextView
+        android:id="@+id/item_group_member_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_toRightOf="@id/item_group_member_avatar"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@id/tv_online_free"
+        android:visibility="gone"
+        android:text="@string/text_online_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_toRightOf="@id/item_group_member_nick"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_corner_rect_orange_light_solid"
+        android:textColor="@color/white_light"
+        android:textSize="@dimen/font_size_10" />
+
+    <View
+        android:id="@+id/item_group_member_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_below="@id/item_group_member_avatar"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:background="@color/divider_list_color" />
+
+</RelativeLayout>

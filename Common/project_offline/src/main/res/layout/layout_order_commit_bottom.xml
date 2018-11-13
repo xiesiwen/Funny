@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_6"
+    android:paddingLeft="@dimen/dimen_12"
+    android:paddingRight="@dimen/dimen_12"
+    android:paddingTop="@dimen/dimen_6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6">
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_unit_price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_order_course_unit_price"
+            android:textColor="@color/gray_dark_deep"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_alter_price_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_toRightOf="@id/layout_order_commit_bottom_unit_price_title"
+            android:drawablePadding="@dimen/dimen_3"
+            android:drawableRight="@drawable/icon_base_wenhao"
+            android:text="@string/text_order_course_alter_price_tip"
+            android:textColor="@color/primary_blue"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_unit_origin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_dark"
+            android:layout_toLeftOf="@+id/layout_order_commit_bottom_unit_price"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_size_16" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/text_order_course_third_site_price"
+            android:textColor="@color/gray_dark_deep"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_third_site_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_size_16" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/text_order_course_count"
+            android:textColor="@color/gray_dark_deep"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_course_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_size_16" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/text_order_course_total_hours"
+            android:textColor="@color/gray_dark_deep"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/layout_order_commit_bottom_total_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_size_16" />
+
+    </FrameLayout>
+</LinearLayout>

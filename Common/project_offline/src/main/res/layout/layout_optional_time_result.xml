@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/layout_optional_time_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/translucence_black" />
+
+    <LinearLayout
+        android:id="@+id/layout_optional_time_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light"
+            android:paddingBottom="@dimen/dimen_6"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12"
+            android:paddingTop="@dimen/dimen_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_time_selected"
+                android:textColor="@color/gray_dark_deep"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/layout_optional_time_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/icon_rubbish_bin_gray"
+                android:drawablePadding="@dimen/dimen_6"
+                android:text="@string/text_clear"
+                android:textColor="@color/gray_dark_deep"
+                android:textSize="@dimen/font_size_14" />
+
+        </FrameLayout>
+
+        <com.qingqing.project.offline.view.order.MaxHeightRecyclerView
+            android:id="@+id/layout_optional_time_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12" />
+
+    </LinearLayout>
+</LinearLayout>

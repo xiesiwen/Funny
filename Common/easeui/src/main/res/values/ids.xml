@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--针对联系人列表, swipelist, partition-->
+    <item name="img_avatar" type="id" />
+    <item name="item_partition_content" type="id" />
+    <item name="item_partition_head" type="id" />
+    <item name="tv_name" type="id" />
+    <item name="tv_head" type="id" />
+    <item name="swipelist_frontview" type="id" />
+    <item name="swipelist_backview" type="id" />
+    <item name="list_contact" type="id" />
+    <item name="blade_view" type="id" />
+    <item name="fragment_contact_list" type="id" />
+
+</resources>

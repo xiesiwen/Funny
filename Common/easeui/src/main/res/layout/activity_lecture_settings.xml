@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttn="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:gravity="center_vertical"
+            style="@style/MyProfileSettingItemStyle"
+            android:paddingLeft="@dimen/simple_setting_item_left_margin"
+            android:paddingRight="@dimen/simple_setting_item_right_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_setting_item_height"
+                android:drawablePadding="@dimen/setting_icon_title_gap"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text="@string/me_identity"
+                android:textColor="@color/gray_dark_deep" />
+            <TextView
+                android:id="@+id/me_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/gray_dark"
+                />
+
+        </RelativeLayout>
+
+        <com.qingqing.base.view.setting.SimpleSettingItem
+            android:id="@+id/invitation_code"
+            style="@style/MyProfileSettingItemStyle"
+            android:layout_marginTop="1dp"
+            ttn:line="1"
+            ttn:showUnderLine="false"
+            ttn:titleString="@string/invitation_code"/>
+        <com.qingqing.base.view.setting.SimpleSettingItem
+            android:id="@+id/set_gag"
+            style="@style/MyProfileSettingItemStyle"
+            android:layout_marginTop="1dp"
+            ttn:line="1"
+            android:visibility="gone"
+            ttn:showUnderLine="false"
+            ttn:titleString="@string/set_gag"/>
+        <TextView
+            android:id="@+id/expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/main_expert"/>
+        <com.qingqing.base.view.AtMostListView
+            android:id="@+id/lv_assistant_expert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/transparent" />
+
+        <Button
+            android:id="@+id/end_forum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_corner_rect_transparent_solid_green_stroke"
+            android:minHeight="50dp"
+            android:visibility="gone"
+            android:text="@string/end_forum"
+            android:textColor="@color/primary_green" />
+    </LinearLayout>
+
+</ScrollView>

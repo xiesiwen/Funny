@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ac_back_padding_left">10dp</dimen>
+    <dimen name="ac_back_padding_right">10dp</dimen>
+
+    <!-- simple setting item -->
+    <dimen name="simple_setting_item_left_margin">12dp</dimen>
+    <dimen name="simple_setting_item_right_margin">12dp</dimen>
+    <dimen name="setting_icon_title_gap">6dp</dimen>
+    <dimen name="common_setting_item_height">50dp</dimen>
+    <dimen name="simple_setting_pic_item_size">45dp</dimen>
+    <dimen name="setting_item_pic_value_height">60dp</dimen>
+
+    <!-- pull to refersh -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <dimen name="blade_section_font_size">13dp</dimen>
+    <dimen name="blade_section_height">15dp</dimen>
+
+    <!-- margin -->
+    <dimen name="dimen_0_5">-5dp</dimen>
+    <dimen name="dimen_0_8">-8dp</dimen>
+    <dimen name="dimen_0_12">-12dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_21">21dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_72">72dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+
+    <dimen name="radius_dp">3dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="bottom_button_height">@dimen/dimen_48</dimen>
+
+    <!--android默认的正常normal字体大小为16sp, 中号Medium字体18sp，小号Small字体14sp, 大号Large字体22sp-->
+    <!--字体规范-->
+    <dimen name="font_size_48">48sp</dimen>
+    <dimen name="font_size_30">30sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <!--使用场景20dp：特殊字体，大号字体-->
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <!--使用场景16dp：整行按钮，顶部标题，第一次标题（如用户昵称，列表选项，时间等）-->
+    <dimen name="font_size_16">16sp</dimen>
+    <!--使用场景13dp：文字-->
+    <dimen name="font_size_13">13sp</dimen>
+    <!--使用场景14dp：文字按钮-->
+    <dimen name="font_size_14">14sp</dimen>
+    <!--使用场景12dp：底部tab title，次一级的标题-->
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <!--使用场景8dp：日历文字-->
+    <dimen name="font_size_8">8sp</dimen>
+
+    <!--Picker Default-->
+    <dimen name="picker_item_default_fixed_width">100dp</dimen>
+    <dimen name="picker_item_default_fixed_height">36dp</dimen>
+
+    <dimen name="maximum_default_pull_scroll">150dp</dimen>
+
+    <dimen name="anchor_pull_scroll_maximum_distance">120dp</dimen>
+
+    <dimen name="triangle_width">10dp</dimen>
+
+    <!--Audio-->
+    <dimen name="audio_play_view_min_width">160dp</dimen>
+    <dimen name="audio_play_view_max_width">300dp</dimen>
+    <dimen name="audio_play_view_width">240dp</dimen>
+    <dimen name="audio_play_view_height">36dp</dimen>
+    <dimen name="audio_play_view_half_height">18dp</dimen>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChatMsgItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qingqing.base.view.AsyncImageViewV2
+            android:id="@+id/iv_userhead"
+            style="@style/DefaultRoundCornerHeadStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/iv_group_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_userhead"
+            android:layout_alignTop="@id/iv_userhead"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/content_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_userhead"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_userid"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_teaching_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            android:layout_width="@dimen/dimen_250"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_user_info"
+            android:layout_marginRight="@dimen/dimen_3"
+            android:layout_marginTop="@dimen/dimen_1"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/bg_mechat_white"
+            android:padding="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/tv_course_report_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_size_14" />
+
+            <com.qingqing.base.view.AsyncImageViewV2
+                android:id="@+id/iv_course_reporter_head_image"
+                style="@style/DefaultRoundCornerHeadStyle"
+                android:layout_width="@dimen/dimen_45"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_below="@id/tv_course_report_title"
+                android:layout_marginTop="@dimen/dimen_6" />
+
+            <TextView
+                android:id="@+id/tv_course_reporter_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_course_report_title"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_toRightOf="@id/iv_course_reporter_head_image"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tv_course_report_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_course_reporter_nick"
+                android:layout_below="@id/tv_course_reporter_nick"
+                android:layout_marginTop="@dimen/dimen_3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

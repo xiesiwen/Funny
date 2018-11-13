@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_dark">#BB000000</color>
+    <!-- 纯黑色-->
+    <color name="pure_black">#000000</color>
+    <!--浅黑色-->
+    <color name="black_light">#333333</color>
+</resources>

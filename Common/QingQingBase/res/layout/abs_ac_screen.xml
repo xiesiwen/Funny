@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/ac_screen_drawer_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true">-->
+
+    <!--&lt;!&ndash;在api19及以上，父控件设置fitsSystemWindows，子控件设置无效&ndash;&gt;-->
+    <!--&lt;!&ndash;在api19及以上主题设置为android:windowTranslucentStatus true是才有效&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ac_screen_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<include-->
+            <!--android:id="@+id/ac_tool_bar"-->
+            <!--layout="@layout/tool_bar" />-->
+
+    <!--</LinearLayout>-->
+
+<!--</android.support.v4.widget.DrawerLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ac_screen_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ac_tool_bar"
+        layout="@layout/tool_bar" />
+
+</LinearLayout>

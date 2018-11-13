@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qingqing.base.view.DividerLineLinearLayout
+        android:id="@+id/fragment_order_set_count_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="@drawable/bg_pay_paper1"
+        android:divider="@color/divider_list_color"
+        android:dividerHeight="@dimen/dimen_1"
+        android:orientation="vertical"
+        app:dividerHorMargin="@dimen/dimen_12"
+        app:drawEnd="false"
+        app:drawStart="false">
+
+        <include layout="@layout/layout_teacher_info_for_order" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_order_set_count_layout_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_12"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_count_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_order_course_buy_count"
+                android:textColor="@color/gray_dark_deep"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_count_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_order_set_count_tv_count_title"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="@string/text_order_course_count_tip"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_6"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_size_16" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_order_set_count_layout_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_12"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_length_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_order_course_sel_length"
+                android:textColor="@color/gray_dark_deep"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_length_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_order_set_count_tv_length_title"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="@string/text_order_course_time_length_tip"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_6"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_size_16" />
+
+        </RelativeLayout>
+
+    </com.qingqing.base.view.DividerLineLinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_order_set_count_layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_order_set_count_layout_main"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:background="@drawable/bg_pay_paper2"
+        android:paddingBottom="@dimen/dimen_12"
+        android:paddingTop="@dimen/dimen_12">
+
+        <TextView
+            android:id="@+id/fragment_order_set_count_tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/font_size_16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_order_set_count_tv_total_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/text_order_total_amount"
+                android:textColor="@color/accent_orange"
+                android:textSize="@dimen/font_size_20" />
+
+            <TextView
+                android:id="@+id/fragment_order_set_count_tv_total_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent_orange"
+                android:textSize="@dimen/font_size_30" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fragment_order_set_count_btn"
+        style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+        android:layout_alignParentBottom="true"
+        android:text="@string/text_next_step" />
+
+</RelativeLayout>

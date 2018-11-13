@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme_Dialog_Compat_ArcImage" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CompDialogTheme_Notice" parent="@style/CompDialogTheme">
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+</resources>

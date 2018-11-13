@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChatRowItemStyle">
+
+    <TextView
+        android:id="@+id/tv_msg_time"
+        style="@style/ChatRowMsgTimeStyle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_cmd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_msg_time"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ease_timestampe_bg"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white_light"
+        android:textSize="@dimen/font_size_14" />
+
+</RelativeLayout>

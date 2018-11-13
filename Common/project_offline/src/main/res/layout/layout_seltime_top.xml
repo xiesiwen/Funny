@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/white_light">
+
+    <ImageView
+        android:id="@+id/select_time_top_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_12"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/select_time_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:textSize="@dimen/font_size_16" />
+
+    <ImageView
+        android:id="@+id/select_time_top_date_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/select_time_top_title"
+        android:padding="@dimen/dimen_6"
+        android:src="@drawable/pic_place01" />
+
+    <TextView
+        android:id="@+id/select_time_top_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dimen_6"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_14"
+        android:visibility="gone" />
+
+</RelativeLayout>

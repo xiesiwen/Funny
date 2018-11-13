@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChatMsgItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qingqing.base.view.AsyncImageViewV2
+            android:id="@+id/iv_userhead"
+            style="@style/DefaultRoundCornerHeadStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/iv_group_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_userhead"
+            android:layout_alignTop="@id/iv_userhead"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/content_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_userhead"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_userid"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_teaching_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            style="@style/ChatMsgRightBubbleStyle"
+            android:layout_below="@id/content_user_info"
+            android:layout_marginTop="@dimen/dimen_1"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/shape_corner_rect_white_solid_gray_light_stroke">
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dimen_3"
+                android:paddingLeft="@dimen/dimen_6"
+                android:paddingRight="@dimen/dimen_6"
+                android:paddingTop="@dimen/dimen_3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bubble"
+            android:layout_marginTop="@dimen/dimen_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ease_timestampe_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_3"
+                android:paddingLeft="@dimen/dimen_12"
+                android:paddingRight="@dimen/dimen_12"
+                android:paddingTop="@dimen/dimen_3"
+                android:text="@string/chat_cmd_msg_overdue_apply_cancel_course_extra_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

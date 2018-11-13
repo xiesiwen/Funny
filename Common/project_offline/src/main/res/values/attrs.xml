@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ImageUploadView">
+        <attr name="showMode"/>
+        <attr name="gridCount" format="integer"/>
+        <attr name="showAdd" format="boolean"/>
+        <attr name="childItem" format="reference"/>
+        <attr name="maxSize" format="integer"/>
+        <attr name="showDelete" format="boolean"/>
+        <attr name="dividerHeight" format="dimension"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="uploadType"/>
+    </declare-styleable>
+
+    <declare-styleable name="CalendarWeekTitleView">
+        <attr name="android:textColor"/>
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
+    <attr name="topBackIcon" format="reference" />
+
+</resources>

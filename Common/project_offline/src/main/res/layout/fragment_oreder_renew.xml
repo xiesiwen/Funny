@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewStub
+        android:id="@+id/fragment_order_renew_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/fragment_order_renew_scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/order_first_course_discount"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_marginRight="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/bg_pay_paper1">
+
+                <include layout="@layout/layout_teacher_info_for_order" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_order_renew_layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_marginRight="@dimen/dimen_6"
+                android:background="@drawable/bg_pay_paper2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_order_renew_layout_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_6"
+                    android:paddingTop="@dimen/dimen_6">
+
+                    <TextView
+                        android:id="@+id/fragment_order_renew_tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_renew_count"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <ImageView
+                        android:id="@+id/icon_course_count_limit_review_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/fragment_order_renew_tv_count"
+                        android:padding="@dimen/dimen_3"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"/>
+
+                    <com.qingqing.base.view.editor.LimitEditText
+                        android:id="@+id/fragment_order_renew_edit_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/fragment_order_renew_img_count_increase"
+                        android:layout_alignTop="@+id/fragment_order_renew_img_count_increase"
+                        android:layout_marginRight="@dimen/dimen_3"
+                        android:layout_toLeftOf="@+id/fragment_order_renew_img_count_increase"
+                        android:background="@drawable/shape_corner_rect_white_solid_gray_dark_stroke"
+                        android:ems="2"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <ImageView
+                        android:id="@+id/fragment_order_renew_img_count_increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_xk_more" />
+
+                    <ImageView
+                        android:id="@+id/fragment_order_renew_img_count_decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_3"
+                        android:layout_toLeftOf="@id/fragment_order_renew_edit_count"
+                        android:src="@drawable/icon_xk_less" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_12"
+                    android:paddingTop="@dimen/dimen_12">
+
+                    <TextView
+                        android:id="@+id/fragment_order_renew_tv_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_sub_total_amount"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <TextView
+                        android:id="@+id/fragment_order_renew_tv_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/accent_orange"
+                        android:textSize="@dimen/font_size_16" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/fragment_order_renew_vertical_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/divider_list_color"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/fragment_order_renew_layout_coupons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_12"
+                    android:paddingTop="@dimen/dimen_12"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/fragment_order_renew_tv_coupons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_order_coupons"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <TextView
+                        android:id="@+id/fragment_order_renew_tv_coupons_deduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/dimen_3"
+                        android:drawableRight="?attr/settingRightArrow"
+                        android:text="@string/text_order_no_available_coupons"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/font_size_16" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_order_renew_layout_change_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_12"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:layout_marginTop="@dimen/dimen_12">
+
+                <View
+                    android:id="@+id/fragment_order_renew_view_tag"
+                    android:layout_width="@dimen/dimen_3"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_alignTop="@+id/fragment_order_renew_tv_other_info"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:background="@color/accent_orange" />
+
+                <TextView
+                    android:id="@+id/fragment_order_renew_tv_other_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_toRightOf="@id/fragment_order_renew_view_tag"
+                    android:text="@string/text_other_info"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/fragment_order_renew_tv_change_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:drawablePadding="@dimen/dimen_3"
+                    android:drawableRight="?attr/settingRightArrow"
+                    android:text="@string/text_change_info"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/font_size_16" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_order_renew_layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/shape_corner_rect_white_solid"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_6"
+                android:paddingTop="@dimen/dimen_6">
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_renew_info_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_renew_info_course_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_renew_info_site_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.base.view.item.SimpleTitleValueActionView
+                    android:id="@+id/fragment_order_renew_info_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qingqing.project.offline.view.order.OrderConfirmTimeDisplayer
+                    android:id="@+id/fragment_order_renew_info_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/order_first_course_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+        android:textColor="@color/black_light"
+        android:gravity="center"
+        android:layout_above="@+id/fragment_order_renew_btn"
+        android:visibility="gone"
+        android:background="#FFF0C9"/>
+
+    <Button
+        android:id="@+id/fragment_order_renew_btn"
+        style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

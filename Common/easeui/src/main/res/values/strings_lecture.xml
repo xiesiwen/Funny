@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--聊天设置-->
+    <string name="me_identity">我的身份</string>
+    <string name="invitation_code">邀请码</string>
+    <string name="main_expert">主讲专家</string>
+    <string name="gag_tip">\"全员禁言\" 　启用后，只允许专家和管理员发言</string>
+    <string name="set_gag">设置禁言</string>
+    <string name="gag_user">被禁言的成员</string>
+    <string name="all_user_gag">全员禁言</string>
+    <string name="relieve_gag">解除</string>
+    <string name="input_invitation_code">请输入邀请码</string>
+    <string name="nick_name_character_count">请输入14个字以内中文、英文或数字</string>
+    <string name="nick_name_can_not_be_empty">昵称不能为空</string>
+    <string name="nick">昵称</string>
+    <string name="you_can_only_enter_chinese_english_digital">只能输入中文、英文或数字</string>
+    <string name="invitation_code_not_exist">邀请码不存在。</string>
+    <string name="become_role">您已成为这个直播的\n%s</string>
+    <string name="please_input_invitation_code">请输入邀请码</string>
+    <string name="admin">管理员</string>
+    <string name="expert">专家</string>
+    <string name="audience">听众</string>
+    <string name="end_forum">结束本次直播</string>
+    <string name="confirm_end_forum">是否确定结束本次直播?</string>
+    <string name="stop_talk_success">禁言成功！</string>
+    <string name="stop_talk_fail">禁言失败！</string>
+    <string name="stop_all_talk_success">全员禁言成功！</string>
+    <string name="allow_all_talk_success">取消全员禁言成功！</string>
+    <string name="release_stop_talk_success">解除禁言成功</string>
+    <string name="release_stop_talk_fail">解除禁言失败</string>
+    <string name="user_detail_dlg_text_back">返&#160;&#160;回</string>
+    <string name="user_detail_dlg_text_mute">设置禁言</string>
+    <string name="user_detail_dlg_text_un_mute">解除禁言</string>
+    <string name="user_detail_dlg_text_favourite">收藏老师</string>
+    <string name="user_detail_dlg_text_enter_teacher_home">进入主页</string>
+    <string name="user_detail_dlg_text_enter_assist_home">进入助教主页</string>
+    <string name="close_lecture_success">关闭直播成功！</string>
+    <string name="close_lecture_fail">关闭直播失败！</string>
+
+    <string name="lecture_detail_base_share_title">轻轻名师讲堂：%1$s</string>
+    <string name="lecture_detail_share_title_feedback">分享得%1$s元</string>
+    <string name="lecture_detail_share_feedback">分享该名师讲堂给好友可得%1$s元奖学券</string>
+    <string name="lecture_detail_share_feedback_return">分享成功后请点击返回轻轻家教</string>
+    <string name="lecture_detail_share_feedback_success">已获得%1$s元奖学券\n
+        请在我的>奖学券中查看</string>
+    <string name="fanta_share_feedback">分享该问答给好友可得%1$s元奖学券</string>
+
+    <string name="attention_text">收藏</string>
+    <string name="have_attention_text">已收藏</string>
+    <string name="attention_failed_text">收藏失败</string>
+    <string name="attention_success_text">收藏成功，可以至收藏的老师中查看</string>
+    <string name="unattention_failed_text">取消收藏失败</string>
+    <string name="unattention_success_text">取消收藏</string>
+
+    <string name="previous_page">上一页</string>
+    <string name="next_page">下一页</string>
+    <string name="sync_page_two_line">同步\n翻页</string>
+    <string name="sync_page">同步翻页</string>
+    <string name="page_number">第%d页</string>
+    <string name="sync_page_mode_on">您已开启同步翻页</string>
+    <string name="sync_page_mode_off">您已关闭同步翻页</string>
+
+    <string name="lecture_detail_ta_summary">成功为%d个家庭找到合适的老师</string>
+    <string name="teacher_home_quality_service">服务&#160;%1$.1f</string>
+    <string name="teacher_home_quality_service_default">服务&#160;&#8212;&#8212;</string>
+    <string name="teacher_home_quality_effect">效果&#160;%1$.1f</string>
+    <string name="teacher_home_quality_effect_default">效果&#160;&#8212;&#8212;</string>
+
+    <string name="teacher_home_price">¥%1$s-%2$s/小时</string>
+    <string name="teacher_home_same_price">¥%1$s/小时</string>
+    <string name="no_course_text">尚未开课</string>
+</resources>

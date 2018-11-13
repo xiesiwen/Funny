@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qingqing.base.view.text.SquareTextView
+        android:id="@+id/item_block_time_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@drawable/round_rect_solid_gray_light_deep"
+        android:gravity="center"
+        android:textColor="@color/select_course_time_block_text_selector"
+        android:textSize="@dimen/font_size_12" />
+
+    <ImageView
+        android:id="@+id/item_block_time_iv_busy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:src="@drawable/icon_time_busy"
+        android:visibility="invisible" />
+
+</FrameLayout>
+

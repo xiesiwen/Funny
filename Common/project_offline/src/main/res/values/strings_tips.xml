@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 下单、续课选课次 -->
+    <string name="tip_order_quit_renew_confirm">续课快要完成了，确定要\n离开么？</string>
+    <string name="tip_order_get_renew_info_failed">获取续课信息失败</string>
+    <string name="toast_teacher_change_course">老师已不再授课该科目，不能续课</string>
+    <string name="toast_teacher_self_change_course">您已不再授课该科目，不能续课</string>
+    <string name="toast_zhikang_teacher_can_not_repeat_order">智康老师不能续课</string>
+    <string name="toast_sel_repeat_circle_first">请先选择每周几上课</string>
+    <string name="toast_sel_time_first">课程时间不能为空</string>
+    <string name="toast_sel_time_conflict">您选择的课程时间有冲突</string>
+
+    <string name="toast_renew_error_course_not_exist">老师当前不支持该课程</string>
+    <string name="toast_renew_error_group_course_not_exist">老师暂不支持该朋友团方式</string>
+    <string name="toast_renew_error_history_order_not_exist">无可续课历史订单</string>
+
+    <!-- 下单、续课页参数缺少提示 -->
+    <string name="toast_select_course_type_first">请先选择课程类型</string>
+    <string name="toast_select_grade_first">请先选择科目年级</string>
+    <string name="toast_select_time_first">请先选择授课时间</string>
+    <string name="toast_select_site_type_first">请先选择授课方式</string>
+    <string name="toast_please_set_address">请设置授课地址！</string>
+
+    <!-- 下单、续课错误码提示 -->
+    <string name="tip_order_error_course_time_conflict">时间冲突</string>
+    <string name="tip_order_error_student_time_conflict">家长时间冲突 </string>
+    <string name="tip_order_error_thirdsite_time_conflict">第三方场地时间冲突 </string>
+    <string name="tip_order_error_teacher_time_conflict">老师时间冲突 </string>
+    <string name="tip_order_error_thirdsite_not_exist">第三方场地不存在 </string>
+    <string name="tip_order_error_course_count_over_20">一次订单不能超过20节</string>
+    <string name="tip_order_error_course_time_error">时间不正确</string>
+    <string name="tip_order_error_student_address_not_exists">家长的地址不存在 </string>
+    <string name="tip_order_error_teacher_course_info_not_exists">老师的课程信息不存在 </string>
+    <string name="tip_order_error_student_not_exist">家长不存在 </string>
+    <string name="tip_order_error_time_over_14h">正式课不能大于14小时 </string>
+    <string name="tip_order_error_teacher_not_exist">老师不存在</string>
+    <string name="tip_order_error_time_out_of_date">选择的上课开始时间已到</string>
+    <string name="tip_order_error_course_time_empty">课程时间不能为空</string>
+    <string name="tip_order_error_teacher_audition_invalid">老师试听课未开放</string>
+    <string name="tip_order_error_teacher_limited">老师受限</string>
+    <string name="tip_order_error_coupons_invalid">优惠券不可用</string>
+
+
+    <string name="add_order_fail">下单失败</string>
+    <string name="add_order_success">下单成功</string>
+
+    <string name="text_renew_order_success">续课成功</string>
+    <string name="text_renew_order_failed">续课失败</string>
+
+    <string name="text_select_course_first">请先选择科目</string>
+    <string name="text_select_grade">请选择年级</string>
+
+</resources>

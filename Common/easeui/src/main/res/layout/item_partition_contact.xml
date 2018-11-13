@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@id/item_partition_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height"
+        android:background="@color/bg_list_item_color"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:id="@id/swipelist_backview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@id/swipelist_frontview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.qingqing.base.view.AsyncImageViewV2
+                android:id="@id/img_avatar"
+                style="@style/DefaultCircleHeadStyle" />
+
+            <TextView
+                android:id="@id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_size_16" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/item_partition_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:minHeight="@dimen/contact_partition_head_height"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

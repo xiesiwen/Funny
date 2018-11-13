@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_order_select_time_result_btn_commit"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_order_select_time_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/fragment_order_select_time_result_btn_commit"
+        style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

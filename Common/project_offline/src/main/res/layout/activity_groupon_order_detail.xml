@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="uiModel"
+            type="com.qingqing.project.offline.order.GrouponOrderDetailUIModel" />
+
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.qingqing.base.view.AsyncImageViewV2
+                            android:id="@+id/aiv_avatar"
+                            style="@style/DefaultCircleHeadStyle"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            app:imageDefaultResId="@{uiModel.teacherDefaultHeadResId}"
+                            app:imageUrl="@{uiModel.teacherHeadUrl}" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/aiv_avatar"
+                            android:layout_toRightOf="@id/aiv_avatar"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{uiModel.orderCourseTitle}"
+                                android:textColor="@color/black"
+                                android:singleLine="true"
+                                android:maxEms="12"
+                                android:textSize="@dimen/font_size_16" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_2"
+                                android:background="@drawable/shape_corner_rect_orange_light_solid"
+                                android:padding="@dimen/dimen_1"
+                                android:text="@{uiModel.groupTypeString}"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_size_12" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/aiv_avatar"
+                            android:layout_toRightOf="@id/aiv_avatar"
+                            android:text="@{uiModel.teacherNick}"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/font_size_14" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:visibility="@{uiModel.contentPack?View.VISIBLE:View.GONE}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_order_course_grade"
+                            android:textColor="@color/gray_dark_deep" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="@{uiModel.courseTitle}"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:gravity="right"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/groupon_detail_course_address"
+                            android:textColor="@color/gray_dark_deep" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:gravity="right"
+                            android:text="@{uiModel.courseAddress}"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_order_time_list"
+                            android:textColor="@color/gray_dark_deep" />
+
+                        <com.qingqing.base.view.AtMostListView
+                            android:id="@+id/amlv_course_time_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:divider="@color/transparent"
+                            android:dividerHeight="@dimen/dimen_3"
+                            android:listSelector="@color/transparent" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:gravity="right"
+                        android:onClick="@{uiModel::toggleTime}"
+                        android:text="@{uiModel.courseTimeFolded?@string/groupon_detail_total_course_count_fold(uiModel.totalCourseCount):@string/groupon_detail_total_course_count_unfold(uiModel.totalCourseCount)}"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_12"
+                        android:visibility="@{uiModel.courseTimeFoldable?View.VISIBLE:View.GONE}" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:orientation="horizontal"
+                        android:visibility="@{TextUtils.isEmpty(uiModel.remarkContent)?View.GONE:View.VISIBLE}">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/groupon_remark"
+                            android:textColor="@color/gray_dark_deep" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:gravity="right"
+                            android:text="@{uiModel.remarkContent}"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:src="@{uiModel.grouponDone?@drawable/icon_success:@drawable/icon_fail}"
+                    android:visibility="@{uiModel.grouponGoing?View.GONE:View.VISIBLE}" />
+            </FrameLayout>
+
+            <com.qingqing.base.view.tab.SlidingHorTabLayout
+                android:id="@+id/shtl_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@{uiModel.memberCountDown}"
+                android:visibility="@{(uiModel.grouponGoing&amp;&amp;!TextUtils.isEmpty(uiModel.memberCountDown))?View.VISIBLE:View.GONE}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@{uiModel.grouponDone?@string/groupon_success:@string/groupon_failed}"
+                android:visibility="@{uiModel.grouponGoing?View.GONE:View.VISIBLE}" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:padding="@dimen/dimen_5"
+                android:visibility="@{uiModel.grouponDone?View.GONE:View.VISIBLE}">
+
+                <LinearLayout
+                    android:id="@+id/ll_count_down_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余 "
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_14" />
+
+
+                    <TextView
+                        android:id="@+id/tv_count_down_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_2"
+                        android:padding="@dimen/dimen_2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_count_down_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_count_down_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_2"
+                        android:padding="@dimen/dimen_2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 结束"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ll_count_down_time"
+                    android:background="@color/gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ll_count_down_time"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <com.qingqing.base.view.AtMostListView
+                android:id="@+id/amlv_groupon_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/dimen_5"
+                android:listSelector="@color/transparent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AccentOrangeStokeButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_12"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:onClick="@{uiModel::payForOthers}"
+                    android:text="@string/groupon_help_to_pay"
+                    android:id="@+id/textView"
+                    android:textSize="@dimen/font_size_16"
+                    android:visibility="@{(uiModel.selfJoined &amp;&amp; !uiModel.selfUnPay &amp;&amp; uiModel.existUnPayUser)?View.VISIBLE:View.GONE}" />
+
+                <TextView
+                    style="@style/BottomWholeWidthOrangeSolidButton"
+                    android:layout_weight="1"
+                    android:onClick="@{uiModel::operate}"
+                    android:text="@{uiModel.buttonText}"
+                    android:visibility="@{TextUtils.isEmpty(uiModel.buttonText)?View.GONE:View.VISIBLE}" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

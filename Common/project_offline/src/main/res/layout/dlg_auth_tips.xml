@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qing="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_home_help_me"
+        android:layout_marginTop="@dimen/dimen_35"
+        android:background="@drawable/round_rect_white" />
+
+    <LinearLayout
+        android:id="@+id/view_home_help_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.qingqing.base.view.shape.ArcView
+                android:id="@+id/arc_top"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                qing:arcStrokeColor="@color/white"
+                qing:fillColor="@color/white"
+                qing:startAngle="180"
+                qing:sweepAngle="360" />
+
+            <ImageView
+                android:id="@+id/iv_tips_image"
+                android:layout_width="@dimen/dimen_65"
+                android:layout_height="@dimen/dimen_65"
+                android:layout_gravity="bottom|center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_auth_id" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_tips_main_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12"
+            android:text="@string/txt_help_me_find_teacher"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_tips_sub_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12"
+            android:text="@string/txt_help_me_find_teacher"
+            android:textColor="@color/gray_dark_deep"
+            android:textSize="@dimen/font_size_12"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view_dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_24" />
+
+        <View
+            android:id="@+id/divider_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_click_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_button_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_12"
+            android:paddingTop="@dimen/dimen_12"
+            android:textColor="@color/primary_green"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+</RelativeLayout>

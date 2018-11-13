@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_sel_date_time_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_sel_date_time_bottom_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.qingqing.project.offline.order.CalendarWeekTitleView
+                android:id="@+id/view_week_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_10"
+                android:textColor="@color/gray_dark_deep" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/fragment_sel_date_time_pre_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_12"
+                    android:paddingLeft="@dimen/dimen_12"
+                    android:paddingRight="@dimen/dimen_24"
+                    android:paddingTop="@dimen/dimen_12"
+                    android:src="@drawable/icon_time_arrow_left_01" />
+
+                <TextView
+                    android:id="@+id/fragment_sel_date_time_month_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/gray_dark_deep"
+                    android:textSize="@dimen/font_size_16" />
+
+                <ImageView
+                    android:id="@+id/fragment_sel_date_time_next_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/dimen_12"
+                    android:paddingRight="@dimen/dimen_12"
+                    android:paddingLeft="@dimen/dimen_24"
+                    android:paddingTop="@dimen/dimen_12"
+                    android:src="@drawable/icon_time_arrow_right_01" />
+
+            </RelativeLayout>
+
+            <com.qingqing.base.view.pager.WrapHeightViewPager
+                android:id="@+id/fragment_sel_date_time_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/fragment_sel_date_time_block_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_12"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_sel_date_time_tv_select_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <ImageView
+                        android:id="@+id/fragment_sel_date_time_check_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_6"
+                        android:layout_toLeftOf="@+id/fragment_sel_date_time_tv_interval_half_hour"
+                        android:clickable="true"
+                        android:src="@drawable/icon_time_half_hour_gray" />
+
+                    <TextView
+                        android:id="@+id/fragment_sel_date_time_tv_interval_half_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/text_interval_half_hour"
+                        android:textColor="@color/gray_dark_deep"
+                        android:textSize="@dimen/font_size_14" />
+                </RelativeLayout>
+
+                <com.qingqing.base.view.recycler.RecyclerView
+                    android:id="@+id/fragment_sel_date_time_block_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_sel_date_time_empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_24"
+                android:paddingTop="@dimen/dimen_24"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/dimen_12"
+                    android:drawableTop="@drawable/icon_time_30_select_blank"
+                    android:text="@string/text_no_invalid_block" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragment_sel_date_time_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/fragment_sel_date_time_bottom_btn_commit"
+            style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+            android:enabled="false"
+            android:text="@string/text_done" />
+
+    </FrameLayout>
+
+    <ViewStub
+        android:id="@+id/fragment_sel_date_time_view_stub"
+        layout="@layout/layout_optional_time_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_sel_date_time_bottom_layout" />
+
+</RelativeLayout>

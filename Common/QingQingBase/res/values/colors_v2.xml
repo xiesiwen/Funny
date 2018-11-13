@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_dark">#BB000000</color>
+    <color name="transparent_pressed">#33000000</color>
+    <color name="translucence_black">#88000000</color>
+
+    <color name="transparent_black_50">#7F000000</color>
+    <color name="transparent_black_80">#CC000000</color>
+    <color name="transparent_white_80">#CCFFFFFF</color>
+
+    <!--60%透明度-->
+    <color name="transparent_80">#98000000</color>
+    <color name="transparent_white_60">#99FFFFFF</color>
+    <!--40%透明度-->
+    <color name="transparent_40">#66000000</color>
+    <!--30%透明度-->
+    <color name="transparent_30">#4C000000</color>
+    <!--20%透明度-->
+    <color name="transparent_white_20">#33FFFFFF</color>
+    <!--10%透明度-->
+    <color name="transparent_orange_10">#19FF9900</color>
+    <color name="transparent_orange_15">#4CFF9900</color>
+    <!--用户等级bar颜色-->
+    <color name="bar_green">#50D9A5</color>
+    <color name="bar_purple">#85859B</color>
+    <color name="bar_orange">#D6AA58</color>
+    <color name="bar_gray">#BAB8AD</color>
+
+    <!--主色，绿色，学生端，用于字体主色，以及顶部导航栏背景色-->
+    <color name="primary_green">#44D080</color>
+    <!--<color name="primary_green">#54AE37</color>-->
+    <!--主色，蓝色，老师端-->
+    <color name="primary_blue">#FF4385F5</color>
+    <!--主色，橙色，ta端-->
+    <color name="primary_orange">#FF9900</color>
+
+    <!--辅助色，橙色-->
+    <color name="accent_orange">#FF7700</color>
+
+    <!--辅助色，深橙色-->
+    <color name="accent_orange_deep">#FD631F</color>
+
+    <!--辅助色，橘色 （橙色）亮-->
+    <color name="accent_orange_light">#FF9900</color>
+    <!--辅助色，深蓝色-->
+    <color name="accent_blue_dark">#496EDA</color>
+    <!--辅助色，蓝色-->
+    <color name="accent_blue">#16AFE9</color>
+    <!--辅助色，浅蓝色-->
+    <color name="accent_blue_light">#D7EDFE</color>
+    <!--辅助色，老师等级边框颜色-->
+    <color name="accent_light_blue">#70A4FB</color>
+    <!--辅助色，黄色-->
+    <color name="accent_yellow">#FFCC00</color>
+    <!--辅助色，红色-->
+    <color name="accent_red_light">#FF7C8A</color>
+    <color name="tip_red">#FA6359</color>
+
+    <color name="tip_red_deep">#FC3E36</color>
+    <!--辅助色，红色-->
+    <color name="tip_red_normal">#FF422E</color>
+
+    <color name="badge_red">#ED524D</color>
+    <!--辅助色，红色-->
+    <color name="accent_red">#DB2440</color>
+    <!--辅助色 紫色 -->
+    <color name="accent_purple">#B76DFF</color>
+
+    <color name="purple">#79778E</color>
+
+    <!--辅助色 绿色 -->
+    <color name="accent_green">#54AE37</color>
+    <color name="accent_green_light">#69D999</color>
+
+
+    <!--浅灰，用于整体的背景色   UI灰2-->
+    <color name="gray_light">#F0F0F0</color>
+
+    <color name="gray_light_dark">#F6F6F6</color>
+
+    <color name="gray_light_light">#F9F9F9</color>
+    <!--浅灰，颜色稍微暗一点-，用于列表3px分隔线    UI灰3-->
+    <color name="gray_light_deep">#ECECEC</color>
+    <!--灰色，用于顶部底部栏1px分隔线      UI灰4-->
+    <color name="gray">#CCCCCC</color>
+    <!-- UI灰5-->
+    <color name="gray_dark">#999999</color>
+    <!-- UI灰6-->
+    <color name="gray_dark_deep">#666666</color>
+
+    <!--浅白，用于顶部导航栏    UI灰1-->
+    <color name="white_light">#F7F7F7</color>
+    <!--纯白，用于底部工具栏，列表item背景色-->
+    <color name="white">#FFFFFF</color>
+
+    <!-- 白色 30% 透明度 -->
+    <color name="transparent_white_30">#4CFFFFFF</color>
+    <!-- 白色 70% 透明度 -->
+    <color name="transparent_white_70">#B2FFFFFF</color>
+    <!--锁屏背景-->
+    <color name="suo_ping_bg">#575558</color>
+
+
+    <!--纯黑-->
+    <color name="black">@color/black_light</color>
+    <color name="pure_black">#000000</color>
+    <!--浅黑色-->
+    <color name="black_light">#333333</color>
+
+    <!--分割线-->
+    <!--列表分割线-->
+    <color name="divider_list_color">@color/gray_light_deep</color>
+    <!--顶部底部导航栏分割线-->
+    <color name="divider_nav_color">@color/gray</color>
+
+    <!--背景色-->
+    <!--顶部导航栏的背景色-->
+    <color name="bg_top_nav_color">@color/white</color>
+    <!--五大专栏顶部导航栏的背景色-->
+    <color name="bg_special_top_nav_color">@color/primary_blue</color>
+    <!--底部导航栏的背景色-->
+    <color name="bg_bottom_nav_color">@color/white_light</color>
+    <!--整体背景色-->
+    <color name="bg_color">@color/gray_light</color>
+    <!--列表item背景色-->
+    <color name="bg_list_item_color">@color/white</color>
+    <!--列表的背景色-->
+    <color name="bg_list_color">@color/white</color>
+    <!--分享弹框背景色-->
+    <color name="bg_share_dlg">#E5E6E6E6</color>
+
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="teacher_button_hover">#FF396AA4</color>
+    <color name="teacher_button_enabled">#ffDBDBDB</color>
+    <color name="student_button_hover">#ff5CA943</color>
+    <color name="student_button_enabled">#ffDBDBDB</color>
+    <color name="contact_assistant">#4786F2</color>
+    <color name="order_tab">#FEC94B</color>
+
+    <color name="me_page_statusbar">#6AB5FE</color>
+
+    <!--中国红-->
+    <color name="ch_red">#CB3536</color>
+
+    <color name="card_view_gold">#F4D297</color>
+    <color name="card_view_gold_solid">#C59D5A</color>
+    <color name="ta_free_course">#8D5A33</color>
+
+    <color name="stages_bg">#FFF4E6</color>
+
+    <!--新的老师端报错红色-->
+    <color name="teacher_warning_red">#FE3824</color>
+
+
+</resources>

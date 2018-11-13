@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_outer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minWidth="260dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_12">
+
+        <LinearLayout
+            android:id="@+id/rl_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_radar_upper"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_12">
+
+            <com.qingqing.base.view.AsyncImageViewV2
+                android:id="@+id/iv_head"
+                style="@style/DefaultRoundCornerHeadStyle"
+                android:layout_width="@dimen/dimen_72"
+                android:layout_height="@dimen/dimen_72"
+                android:layout_marginTop="@dimen/dimen_12" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_12"
+                android:paddingRight="@dimen/dimen_12"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_size_16" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_12">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_content_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:maxLines="8"
+                    android:scrollbarStyle="outsideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/font_size_14" />
+
+                <LinearLayout
+                    android:id="@+id/ll_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.qingqing.base.view.ratingbar.AutoResizeRatingBar
+                        android:id="@+id/rb_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_6">
+
+                        <TextView
+                            android:id="@+id/tv_service"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:padding="@dimen/dimen_6"
+                            android:text="123123"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/tv_effect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:padding="@dimen/dimen_6"
+                            android:text="123123"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/font_size_12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="123123"
+                        android:textColor="@color/accent_orange"
+                        android:textSize="@dimen/font_size_16" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/gray_light_deep" />
+
+        <com.qingqing.base.view.DividerLineLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/bg_dialog_radar_lower_white"
+            android:divider="@color/gray_light_deep"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:dividerWidth="@dimen/dimen_1"
+            app:drawEnd="false"
+            app:drawStart="false">
+
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/got_it"
+                android:textColor="@color/primary_green"
+                android:textSize="@dimen/font_size_16"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/user_detail_dlg_text_enter_teacher_home"
+                android:textColor="@color/primary_green"
+                android:textSize="@dimen/font_size_16"
+                android:visibility="visible" />
+        </com.qingqing.base.view.DividerLineLinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/ll_outer"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:src="@drawable/icon_teacher_five_close" />
+
+</RelativeLayout>

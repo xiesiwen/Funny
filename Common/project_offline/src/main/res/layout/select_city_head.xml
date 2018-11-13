@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray_light">
+
+    <LinearLayout
+        android:id="@+id/ll_city_visiting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_city_head_item_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bg_list_item_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/select_city_head_item_padding"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_size_16"
+            android:text="@string/current_city_text"/>
+
+        <TextView
+            android:id="@+id/tv_city_visiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/select_city_head_item_padding"
+            android:paddingRight="@dimen/select_city_head_item_padding"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_size_16"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_city_head_item_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/select_city_head_item_padding"
+        android:paddingRight="@dimen/select_city_head_item_padding"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/font_size_16"
+        android:text="@string/location_city_text"/>
+
+    <TextView
+        android:id="@+id/tv_city_locating"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_city_head_item_height"
+        android:background="@color/bg_list_item_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/select_city_head_item_padding"
+        android:paddingRight="@dimen/select_city_head_item_padding"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/font_size_16"
+        android:drawableLeft="@drawable/icon_address_position"/>
+
+    <TextView
+        android:id="@+id/tv_city_hot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_city_head_item_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/select_city_head_item_padding"
+        android:paddingRight="@dimen/select_city_head_item_padding"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/font_size_16"/>
+
+    <com.qingqing.base.view.AtMostGridView
+        android:id="@+id/list_city_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:numColumns="4"
+        android:background="@color/gray_light"/>
+</LinearLayout>

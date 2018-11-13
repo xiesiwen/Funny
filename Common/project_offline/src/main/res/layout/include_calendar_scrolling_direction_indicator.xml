@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qingqing.project.offline.view.ncalendar.CalendarIndicatorView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="48dp"
+        android:layout_height="@dimen/calendar_indicator_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_calendar_scrolling_direction_indicator" />
+
+</com.qingqing.project.offline.view.ncalendar.CalendarIndicatorView>

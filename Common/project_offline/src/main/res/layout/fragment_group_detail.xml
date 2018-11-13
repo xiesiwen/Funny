@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttn="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.qingqing.base.view.setting.SimpleSettingItem
+                android:id="@+id/group_id"
+                style="@style/MyProfileSettingItemStyle"
+                android:layout_marginTop="@dimen/dimen_10"
+                ttn:titleString="@string/im_group_id" />
+
+            <com.qingqing.base.view.setting.SimpleSettingItem
+                android:id="@+id/group_num"
+                style="@style/MyProfileSettingItemStyle"
+                ttn:titleString="@string/im_group_number" />
+
+            <com.qingqing.base.view.setting.SimpleSettingItem
+                android:id="@+id/group_name"
+                style="@style/MyProfileSettingItemStyle"
+                ttn:titleString="@string/im_group_name" />
+
+            <com.qingqing.base.view.setting.SettingToggleValueItem
+                android:id="@+id/item_ignore_msg"
+                style="@style/MyProfileSettingItemStyle"
+                android:layout_marginTop="@dimen/dimen_12"
+                ttn:hasSettingAction="false"
+                ttn:showUnderLine="false"
+                ttn:titleString="消息免打扰" />
+            <com.qingqing.project.offline.groupchat.ExpandGridView
+                android:id="@+id/gv_member_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:numColumns="5"
+                android:stretchMode="spacingWidthUniform" />
+
+            <TextView
+                android:id="@+id/disband_group_submit"
+                style="?attr/groupSubmitStyle"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/im_disband_group" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

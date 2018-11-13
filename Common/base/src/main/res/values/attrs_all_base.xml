@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Divider Line-->
+    <declare-styleable name="DividerLinearLayout">
+        <attr name="android:dividerHeight" />
+        <attr name="android:divider" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="dividerTopMargin" format="reference|dimension" />
+        <attr name="dividerBottomMargin" format="reference|dimension" />
+        <attr name="dividerLeftMargin" format="reference|dimension" />
+        <attr name="dividerRightMargin" format="reference|dimension" />
+        <attr name="dividerHorMargin" format="reference|dimension" />
+        <attr name="dividerVerMargin" format="reference|dimension" />
+        <attr name="drawStart" format="boolean" />
+        <attr name="drawEnd" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TagLayout">
+        <attr name="android:horizontalSpacing" />
+        <attr name="android:verticalSpacing" />
+        <attr name="singleChoice" format="boolean" />
+        <attr name="cancelable" format="boolean" />
+        <attr name="singleLine" format="boolean" />
+        <attr name="isIndicator" format="boolean" />
+        <attr name="maxLines" format="integer" />
+        <attr name="tagMode">
+            <flag name="adaptable" value="0" />
+            <flag name="fixed" value="1" />
+        </attr>
+        <attr name="android:numColumns" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalScrollScroller">
+        <attr name="countPerPage">
+            <flag name="one" value="1" />
+            <flag name="two" value="2" />
+        </attr>
+        <attr name="indDrawable" format="reference" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveProgressView">
+        <attr name="level" format="float" />
+        <attr name="amplitude" format="dimension" />
+        <attr name="length" format="dimension" />
+        <attr name="speed" format="dimension" />
+        <attr name="bgWave" format="reference" />
+        <attr name="fgWave" format="reference" />
+        <attr name="fgColor" format="color" />
+        <attr name="autoLevel" format="boolean" />
+        <!-- Just for fgColor mode -->
+        <attr name="onlyFrame" format="boolean" />
+    </declare-styleable>
+
+    <attr name="strokeBadgeView" format="reference"/>
+    <declare-styleable name="StrokeBadgeView">
+        <attr name="badgeFillColor" format="color" />
+        <attr name="badgeStokeColor" format="color" />
+        <attr name="badgeStokeWidth" format="dimension" />
+        <attr name="badgeStokeMaxCount" format="integer"/>
+        <attr name="android:textColor" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorfulTextView">
+        <attr name="bgRoundRadius" format="boolean" />
+        <attr name="bgRadius" format="dimension"/>
+        <attr name="bgSolidColor" format="color"/>
+        <attr name="bgStrokeColor" format="color"/>
+        <attr name="bgStrokeWidth" format="dimension"/>
+    </declare-styleable>
+
+</resources>

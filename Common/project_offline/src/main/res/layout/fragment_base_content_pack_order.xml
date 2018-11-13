@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/bg_pay_paper1">
+
+            <include layout="@layout/layout_content_pack_info_for_order" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:background="@drawable/bg_pay_paper2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fragment_base_cp_order_layout_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_6"
+                android:paddingTop="@dimen/dimen_6"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/fragment_base_cp_order_tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/text_order_time_reset_count"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/font_size_16" />
+
+                <com.qingqing.base.view.editor.LimitEditText
+                    android:id="@+id/fragment_base_cp_order_edit_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/fragment_base_cp_order_img_count_increase"
+                    android:layout_alignTop="@+id/fragment_base_cp_order_img_count_increase"
+                    android:layout_marginRight="@dimen/dimen_3"
+                    android:layout_toLeftOf="@+id/fragment_base_cp_order_img_count_increase"
+                    android:background="@drawable/shape_corner_rect_white_solid_gray_dark_stroke"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/font_size_16" />
+
+                <ImageView
+                    android:id="@+id/fragment_base_cp_order_img_count_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_xk_more" />
+
+                <ImageView
+                    android:id="@+id/fragment_base_cp_order_img_count_decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_3"
+                    android:layout_toLeftOf="@id/fragment_base_cp_order_edit_count"
+                    android:src="@drawable/icon_xk_less" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_6"
+                android:paddingTop="@dimen/dimen_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/text_order_site_type"
+                    android:textColor="@color/gray_dark_deep"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/fragment_base_cp_order_tv_site_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/font_size_16" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/fragment_base_cp_order_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_3"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layerType="software"
+                android:src="@drawable/bg_dashed_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fragment_base_cp_order_tv_refund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:drawableLeft="@drawable/icon_refund"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_horizontal"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--新用户优惠提示-->
+        <include layout="@layout/view_first_order_coupon_des" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_base_cp_order_btn"
+        style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+        android:layout_alignParentBottom="true"
+        android:text="@string/text_sel_course_time" />
+
+</RelativeLayout>

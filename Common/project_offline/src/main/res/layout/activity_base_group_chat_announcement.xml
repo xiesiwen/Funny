@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white_light"
+        android:padding="@dimen/dimen_12"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_5"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_group_chat_announce_title"
+            android:textSize="@dimen/font_size_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            tools:text="编辑"
+            tools:visibility="visible"
+            android:padding="@dimen/dimen_5"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_admin_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_12"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/fl_avatar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            >
+
+            <com.qingqing.base.view.AsyncImageViewV2
+                android:id="@+id/iv_avatar"
+                style="@style/DefaultRoundCornerHeadStyle"
+                android:layout_gravity="center_horizontal"
+                tools:src="@drawable/ic_share03"/>
+
+            <ImageView
+                android:id="@+id/iv_admin_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_chat_gly"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_last_edit_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fl_avatar_container"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_toRightOf="@id/fl_avatar_container"
+            tools:text="上海师资组长"
+            />
+
+        <TextView
+            android:id="@+id/tv_last_edit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_last_edit_user_name"
+            android:layout_below="@id/tv_last_edit_user_name"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_12"
+            tools:text="2017-06-26:08:00"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

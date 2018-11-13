@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ease_recording_hint_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_record_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/container_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_exclamation_point02" />
+
+        <LinearLayout
+            android:id="@+id/ease_recording_imgs_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="9dp"
+                android:background="@drawable/icon_exclamation_point03"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_exclamation_point03"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_exclamation_point03"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_exclamation_point03"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_exclamation_point03"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recording_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/move_up_to_cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

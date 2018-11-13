@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.qingqing.base.nim.view.MessageListView
+            android:id="@+id/list_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:transcriptMode="normal" />
+
+        <com.easemob.easeui.widget.EaseVoiceRecorderView
+            android:id="@+id/audio_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <com.qingqing.base.nim.view.ChatMenuContainer
+        android:id="@+id/container_chat_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_light"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light_deep" />
+
+        <include
+            android:id="@+id/chat_input_menu"
+            layout="@layout/chat_input_menu" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light_deep" />
+
+        <com.qingqing.base.nim.view.ChatExtendMenu
+            android:id="@+id/chat_extend_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp"
+            android:visibility="gone" />
+
+    </com.qingqing.base.nim.view.ChatMenuContainer>
+
+</LinearLayout>

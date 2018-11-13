@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChatMsgItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qingqing.base.view.AsyncImageViewV2
+            android:id="@+id/iv_userhead"
+            style="@style/DefaultRoundCornerHeadStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/iv_group_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_userhead"
+            android:layout_alignTop="@id/iv_userhead"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/content_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_userhead"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_role"
+                style="@style/ChatRoleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_userid"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            style="@style/ChatMsgLeftBubbleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_user_info"
+            android:layout_toRightOf="@id/iv_userhead">
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_volume03" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_unread_voice"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_below="@+id/content_user_info"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/bubble"
+            android:src="@drawable/item_new_ind_icon" />
+
+        <TextView
+            android:id="@+id/tv_length"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_unread_voice"
+            android:layout_toRightOf="@+id/bubble"
+            android:gravity="center"
+            android:text="3&apos;&apos;" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/content_user_info"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/iv_unread_voice"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Base</string>
+
+    <string name="base_no_call_permission">当前没有拨打电话的权限，请允许轻轻拨打电话后，再重试</string>
+    <string name="base_empty_call_number_default">号码为空</string>
+    <string name="base_empty_call_number_trial_class">由于未购买正式课，暂时无法联系家长</string>
+    <string name="base_call_unknown_error">拨打电话，未知错误</string>
+    <string name="not_support_call_tips">当前设备不支持拨号</string>
+</resources>

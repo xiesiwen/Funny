@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:background="@drawable/bg_pay_paper1">
+
+        <include layout="@layout/layout_teacher_info_for_order" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_order_renew_group_layout_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:background="@drawable/bg_pay_paper2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_order_renew_group_tv_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_group_members"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:id="@+id/fragment_order_renew_group_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_3"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layerType="software"
+            android:src="@drawable/bg_dashed_line"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragment_order_renew_group_tv_daifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:gravity="center_horizontal"
+            android:text="@string/text_confirm_group_members_tip"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_order_renew_group_btn"
+        style="@style/BottomWholeWidthOrangeSolidButton"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:text="@string/text_confirm_group_members" />
+
+    <TextView
+        android:id="@+id/fragment_order_renew_group_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:text="@string/text_group_members_changed"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/font_size_14" />
+
+</LinearLayout>

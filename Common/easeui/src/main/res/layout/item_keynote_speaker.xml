@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_10">
+
+        <com.qingqing.base.view.AsyncImageViewV2
+            android:id="@+id/user_avator"
+            style="@style/DefaultRoundCornerHeadStyle"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/user_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_toRightOf="@id/user_avator"
+            android:ellipsize="end"
+            android:maxEms="14"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/user_lever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/icon"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_13"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/relieve_gag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_corner_rect_white_solid_green_stroke"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/relieve_gag"
+            android:textColor="@color/primary_green"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_list_color" />
+</LinearLayout>

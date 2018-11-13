@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChatMsgItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_little_secretary"
+            android:src="@drawable/ic_little_secretary"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+
+        <LinearLayout
+            android:id="@+id/content_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_little_secretary"
+            android:layout_toRightOf="@id/iv_little_secretary"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/chat_text_name_style"
+                android:text="轻轻小秘书"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            style="@style/ChatMsgLeftBubbleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_user_info"
+            android:layout_toRightOf="@id/iv_little_secretary">
+
+            <com.qingqing.base.nim.view.MessageTextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:autoLink="web"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_size_14" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

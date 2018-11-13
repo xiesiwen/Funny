@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qingqing.base.view.item.SimpleTitleValueActionView
+        android:id="@+id/fragment_order_commit_info_site_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.qingqing.base.view.item.SimpleTitleValueActionView
+        android:id="@+id/fragment_order_commit_info_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.qingqing.project.offline.view.order.OrderConfirmTimeDisplayer
+        android:id="@+id/fragment_order_commit_info_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</merge>

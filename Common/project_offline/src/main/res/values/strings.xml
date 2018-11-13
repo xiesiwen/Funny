@@ -1,0 +1,479 @@
+<resources>
+    <string name="app_name">QingProjectOffline</string>
+
+
+    <!--群聊-->
+    <string name="text_group_chat_setting">群设置</string>
+    <string name="text_check_all_chat_members">查看全部群成员</string>
+    <string name="text_chat_group_name">群名称</string>
+    <string name="text_chat_information">重要资讯</string>
+    <string name="text_my_nick_in_this_group">我在本群的昵称</string>
+    <string name="text_sticky_posts">置顶聊天</string>
+    <string name="text_message_not_interrupted">消息免打扰</string>
+    <string name="text_dl_config_exit_group_chat">确认退出并删除群聊吗？</string>
+    <string name="text_dl_config_delete_members">确定要删除所选中的群成员？</string>
+    <string name="text_search_chat_member_result_member_non_exit">该用户不存在</string>
+    <string name="search_via_phone">通过手机号搜索</string>
+    <string name="text_add">添加</string>
+    <string name="text_add_success">添加成功！</string>
+    <string name="text_deleted">已删除</string>
+    <string name="text_hint_search_nick_or_real_name">输入老师实名或昵称</string>
+    <string name="text_hint_search_nick">输入老师昵称</string>
+    <string name="text_group_members">群成员</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_edit_group_chat_name_input">请输入14个字以内中文、英文或数字。</string>
+    <string name="text_create_new">新建</string>
+    <string name="text_counts_exceeding_limits">字数超过上限！</string>
+    <string name="text_copied_to_clipboard">文字已复制到剪切板！</string>
+    <string name="text_hint_input_announcement">请输入群公告</string>
+
+    <string name="text_group_chat_announce_title">群公告</string>
+    <string name="text_group_chat_announce_value_empty">无</string>
+    <string name="text_average_course_time_of_this_group">群平均课时数</string>
+    <string name="text_exit_current_edit">退出本次编辑？</string>
+    <string name="text_confirm_publish_announce">该公告会通知全部成员，是否发布？</string>
+    <string name="text_proceed_edit">继续编辑</string>
+    <string name="text_exit">退出</string>
+    <string name="text_publish">发布</string>
+    <string name="text_successfully_published">已发布</string>
+    <string name="text_unset">未设置</string>
+    <!--群聊   end-->
+
+
+    <!--作业相关-->
+    <string name="text_message_title_preview_student">%s 给您布置的课前预习</string>
+    <string name="text_message_title_review_student">%s 给您布置的课后作业</string>
+    <string name="text_message_title_preview_teacher">您布置的课前预习</string>
+    <string name="text_message_title_review_teacher">您布置的课后作业</string>
+    <string name="text_message_title_review_preview_teacher">您布置的内容</string>
+    <string name="text_grade_course_preview">%s预习</string>
+    <string name="text_grade_course_review">%s课后作业</string>
+    <string name="title_preview_detail_student">预习详情</string>
+    <string name="title_review_detail_student">作业详情</string>
+    <string name="title_preview_detail_teacher">查看预习详情</string>
+    <string name="title_review_detail_teacher">查看作业详情</string>
+    <string name="title_review_detail_with_answer_teacher">查看课后作业</string>
+    <string name="title_preview_detail_with_answer_teacher">查看预习作业</string>
+    <string name="text_see_tiku_student">老师给您布置了在线练习，快去完成吧</string>
+    <string name="text_see_tiku_teacher_preview">请电脑访问www.changingedu.com\n在我是老师>布置预习中，查看学生答题情况</string>
+    <string name="text_see_tiku_teacher_review">请电脑访问www.changingedu.com\n在我是老师>布置作业中，查看学生答题情况</string>
+    <string name="text_see_now">检查作业</string>
+    <string name="text_answer_complete_time">完成时间：%s</string>
+    <string name="text_homework_create_time">布置时间：%s</string>
+    <string name="text_homework_upload_time">提交时间：%s</string>
+    <string name="text_see_my_homework_preview">查看我上传的预习作业</string>
+    <string name="text_see_my_homework_review">查看我上传的课后作业</string>
+    <string name="text_see_preview_tiku_only_student">去查看老师布置的在线题库预习</string>
+    <string name="text_see_review_tiku_only_student">去查看老师布置的在线题库作业</string>
+    <string name="text_see_preview_tiku_only_teacher">去查看您布置的在线题库预习</string>
+    <string name="text_see_review_tiku_only_teacher">去查看您布置的在线题库作业</string>
+    <string name="text_see_preview_prep_offline_student">老师已布置线下预习</string>
+    <string name="text_see_review_prep_offline_student">老师已布置线下作业</string>
+    <string name="text_see_preview_prep_offline_teacher">您已布置线下预习</string>
+    <string name="text_see_review_prep_offline_teacher">您已布置线下作业</string>
+    <string name="title_homework_answer_detail_activity_student">我的作业</string>
+    <string name="title_homework_answer_detail_activity_teacher">查看答案</string>
+    <string name="title_homework_answer_detail">%s 作业详情</string>
+    <string name="title_create_preview">布置预习</string>
+    <string name="title_create_review">布置作业</string>
+    <string name="title_upload_homework">上传作业</string>
+    <string name="text_create_audio_preview_teacher">语音布置预习</string>
+    <string name="text_create_audio_review_teacher">语音布置作业</string>
+    <string name="text_create_audio_preparation_student">录制语音作业</string>
+    <string name="text_re_record">重录</string>
+    <string name="hint_preview_teacher"><DATA><![CDATA[<small>若有文字形式的预习内容，请在此输入。</small>]]></DATA></string>
+    <string name="hint_review_teacher"><DATA><![CDATA[<small>若有文字形式的作业内容，请在此输入。</small>]]></DATA></string>
+    <string name="hint_homework_new">本次课将要教授的知识点：\n孩子需要提前准备的内容：\n语音内容提示</string>
+    <string name="hint_preview_review_student"><DATA><![CDATA[<small>请文字输入作业内容</small>]]></DATA></string>
+    <string name="text_add_preparation_photo">添加预习作业照片</string>
+    <string name="text_tiku">题库</string>
+    <string name="text_see">查看</string>
+    <string name="text_add_tiku">扫一扫添加题库</string>
+    <string name="text_send_to_parent">发送给家长</string>
+    <string name="text_send_to_teacher">上传</string>
+    <string name="text_send_to_teacher_can_add_score">上传得%1$d轻豆</string>
+    <string name="text_send_to_teacher_can_add_score_privilege"><DATA><![CDATA[上传得%1$d轻豆<small>(会员加速)</small>]]></DATA></string>
+    <string name="text_has_create_offline">线下已布置</string>
+    <string name="text_no_need_create">不需要布置</string>
+    <string name="text_capture_qrcode">将二维码放入框内，即可自动扫描</string>
+    <string name="text_alert_ignore_homework">\n本节课不需要布置作业了吗？\n确定后将发送给家长哦\n</string>
+    <string name="text_alert_ignore_preview">\n本节课不需要布置预习了吗？\n确定后将发送给家长哦\n</string>
+    <string name="text_alert_offline_homework">\n本节课线下已经布置了作业吗？\n确定后将发送给家长哦\n</string>
+    <string name="text_alert_offline_preview">\n本节课线下已经布置了预习吗？\n确定后将发送给家长哦\n</string>
+    <string name="text_alert_delete_audio"><DATA><![CDATA[
+        确定要<font color="#000000">删除语音</font>吗？
+    ]]></DATA></string>
+    <string name="text_alert_confirm_delete">确定要删除吗？</string>
+    <string name="text_dlg_upload_homework_complete_has_award">感谢填写，课时费%s元已解冻</string>
+    <string name="text_dlg_upload_homework_complete_no_award">感谢填写</string>
+    <string name="text_upload_homework_answer_complete">提交成功\n老师会尽快批改您的作业</string>
+    <string name="text_create_homework_tip_has_award"><DATA><![CDATA[
+        将<font color="#DB2440">解冻%s元课时费！</font>
+    ]]></DATA></string>
+    <string name="text_create_homework_tip_no_award">孩子能更好的接受哦~</string>
+    <string name="text_dlg_create_homework">\n检查无误了吗？\n提交后不能修改了哦\n </string>
+    <string name="text_dlg_homework_too_short_warning">\n内容有点少哦，\n确认发送吗？</string>
+    <string name="capture_2d_code">扫描二维码</string>
+    <string name="text_give_course_address">地址：%s</string>
+    <string name="text_no_student_complete">暂无学生完成哦~</string>
+    <string name="text_fuwuhao_tuijian">服务号推荐</string>
+    <string name="text_add_tiku_new">添加题库</string>
+    <string name="text_tiku_info">题库说明</string>
+    <string name="text_capture_info">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="text_has_completed_homework">做完了</string>
+    <string name="text_has_completed_homework_can_add_score">完成作业+%1$d轻豆</string>
+    <string name="text_has_completed_homework_can_add_score_privilege"><DATA><![CDATA[完成作业+%1$d轻豆 <small>(会员加速)</small>]]></DATA></string>
+    <string name="text_has_completed_preview_can_add_score">完成预习+%1$d轻豆</string>
+    <string name="text_has_completed_preview_can_add_score_privilege"><DATA><![CDATA[完成预习+%1$d轻豆 <small>(会员加速)</small>]]></DATA></string>
+    <string name="text_upload_homework">上传作业给老师批改</string>
+    <string name="text_upload_homework_can_add_score">上传作业给老师批改+%1$d轻豆</string>
+    <string name="text_upload_homework_can_add_score_privilege"><DATA><![CDATA[上传作业给老师批改+%1$d轻豆 <small>(会员加速)</small>]]></DATA></string>
+    <string name="text_is_out_of_date">已过期</string>
+    <string name="text_no_need_homework">该课程老师未布置作业</string>
+    <string name="text_no_need_preview">该课程老师未布置预习</string>
+    <!--作业相关   end   -->
+
+
+    <!-- 团购订单 -->
+    <string name="groupon_order_detail">朋友团详情</string>
+    <string name="groupon_remark">朋友团备注</string>
+    <string name="groupon_detail_share">还差%d人成团 去邀请好友</string>
+    <string name="groupon_detail_share_default">邀请好友付款</string>
+    <string name="groupon_detail_join_group">我要参团</string>
+    <string name="groupon_detail_share_to_student">还差%d人成团 去邀请家长</string>
+    <string name="groupon_detail_share_default_to_student">邀请家长参团</string>
+    <string name="groupon_detail_course_address">上课地点</string>
+    <string name="groupon_detail_total_course_count_fold">共计%d次课，查看全部</string>
+    <string name="groupon_detail_total_course_count_unfold">共计%d次课，收起详情</string>
+    <string name="groupon_detail_member_count_down"><Data><![CDATA[还差<font color="#FF7700">%d</font>人，就能开团啦]]></Data></string>
+    <string name="groupon_detail_chief_member_title">团长&#058;&#032;%s</string>
+    <string name="groupon_detail_chief_join_time">开团时间&#058;&#032;%s</string>
+    <string name="groupon_detail_join_time">参团时间&#058;&#032;%s</string>
+    <string name="groupon_success">组团成功</string>
+    <string name="groupon_failed">组团失败</string>
+    <string name="groupon_create_one">重新开团</string>
+    <string name="groupon_chief_title">团长</string>
+    <string name="two_group">二人团</string>
+    <string name="three_group">三人团</string>
+    <string name="four_group">四人团</string>
+    <string name="five_group">五人团</string>
+    <string name="audition_course_text">试听课</string>
+    <string name="normal_course_text">正式课</string>
+    <string name="groupon_share_title">%1$s邀请您一起参加%2$s的团课。</string>
+    <string name="groupon_share_content">%1$s%2$s，第一次课程时间：%3$s。</string>
+    <string name="groupon_help_to_pay">帮朋友代付</string>
+
+    <!-- 下单选择课次和时间 -->
+    <string name="title_order_renew">续课</string>
+    <string name="title_order_new">预约课程</string>
+    <string name="title_order_confirm">确认订单</string>
+
+    <string name="text_order_class_start_time">上课开始时间</string>
+    <string name="text_no_time_blocks">当前没有可选择的时间段</string>
+    <string name="text_select_time_busy_title">时段繁忙</string>
+    <string name="text_select_time_busy_ind">老师设置该时段繁忙，您是否接受和老师协调其他时间？</string>
+    <string name="text_select_time_busy">接受</string>
+    <string name="text_select_another_time_when_busy">重新选择</string>
+
+    <string name="text_order_time_list">课程时间</string>
+    <string name="text_order_time_conflict">时间冲突</string>
+    <string name="text_order_time_select">请选择上课时间</string>
+    <string name="text_order_time_conflict_toast">选择的时间有冲突</string>
+    <string name="text_select_course_date">上课日期</string>
+
+    <string name="text_order_continue_renew">继续下单</string>
+    <string name="order_confirm_display_all_time">共计%1$d次课%2$s课时，点击查看全部</string>
+    <string name="order_confirm_all_time_displayed">共计%1$d次课%2$s课时</string>
+
+    <string name="text_drop_course_anytime">随时退</string>
+    <string name="text_drop_course">未上课的课程可以随时退款，放心购买</string>
+
+    <!-- 新版下单流程 start-->
+    <string name="text_format_3_str">%1$s %2$s %3$s</string>
+    <string name="text_format_times">%1$d次</string>
+    <string name="text_format_hours">%1$s小时</string>
+    <string name="text_format_price">￥%1$s/小时</string>
+    <string name="text_format_amount">￥%s</string>
+    <string name="text_format_amount_total">总价￥%s</string>
+    <string name="text_format_amount_range">￥%1$s-%2$s</string>
+    <string name="text_format_amount_original">原价￥%s</string>
+    <string name="text_format_courses">%s次</string>
+
+    <string name="title_group_members">确定朋友团成员</string>
+    <string name="text_confirm_group_members_tip">替其他家长付款，直接开团成功</string>
+    <string name="text_confirm_group_members">下一步</string>
+    <string name="text_group_members_changed">团员变了？点击此处</string>
+    <string name="text_groupon_remark_setting_ind">您对朋友团其他成员的要求</string>
+
+    <!-- 优惠包信息 -->
+    <string name="text_format_buy_free">买%1$d送%2$d</string>
+    <string name="text_format_buy_free_time_single_site_type">%1$s买%2$d送%3$d（共%4$s小时）</string>
+    <string name="text_format_buy_free_time_composite_site_type">买%1$d次%2$s送%3$d次%4$s（共%5$s小时）</string>
+    <string name="text_format_buy_free_time_composite_packet_type">%1$s买%2$d送%3$d + %4$s买%5$d送%6$d（共%7$s小时）</string>
+    <string name="text_format_total_hours">（共%1$s小时）</string>
+    <string name="title_course_packet">优惠课程包</string>
+    <string name="text_favourable_packet">优惠包</string>
+    <string name="text_favourable_packet_tip">买就送，优惠课程包超值抢购！</string>
+    <string name="text_course_packet_rule_offline">（线下课%d次/每次2小时）</string>
+    <string name="text_course_packet_rule_online">（线上课%d次/每次2小时）</string>
+    <string name="text_buy_now">立即购买</string>
+    <string name="text_course_packet_optional">优惠套餐</string>
+    <string name="text_course_packet_online_optional">在线课优惠套餐</string>
+    <string name="text_course_packet_tips">注：%1$s</string>
+    <string name="text_format_buy_free_expand">购买%1$d次课送%2$d次课</string>
+
+    <string name="text_format_buy_free_single_site_type">%1$s买%2$d送%3$d</string>
+    <string name="text_format_buy_free_composite_site_type">买%1$d次%2$s送%3$d次%4$s</string>
+    <string name="text_format_buy_free_composite_packet_type">%1$s买%2$d送%3$d + %4$s买%5$d送%6$d</string>
+
+    <string name="text_favourable_pack_not_exists">选择的优惠课程包已关闭</string>
+
+    <!-- 内容包信息 -->
+    <string name="title_content_packet">精选课程</string>
+    <string name="text_content_pack_info">内容课程包：%1$s</string>
+    <string name="text_content_pack_time_info_format">（%1$d次课共%2$s小时）</string>
+    <string name="text_content_pack_time_info_format2">%1$d次课 共%2$s小时</string>
+    <string name="text_content_pack_not_exists">选择的精选课程已关闭</string>
+
+    <!-- 续课确认界面 -->
+    <string name="title_order_renew_confirm">续课确认</string>
+    <string name="text_renew_count">续课次数</string>
+    <string name="text_sub_total_amount">小计</string>
+    <string name="text_other_info">其他信息</string>
+    <string name="text_change_info">我要修改上课时间地点</string>
+    <string name="text_renew_confirm_amount">确认支付%s元</string>
+    <string name="text_renew_confirm_pay">确认支付</string>
+
+    <string name="text_renew_info_error_course">当前科目已不支持续课</string>
+    <string name="text_renew_info_error_grade">当前年级已不支持续课</string>
+    <string name="text_renew_info_error_site_type">当前授课方式已不支持续课</string>
+
+    <!-- 设置课次和时长 -->
+    <string name="text_order_course_buy_count">购买课次</string>
+    <string name="text_order_course_count_tip">早预定早安心，课程可能会涨价</string>
+    <string name="text_order_course_sel_count">选择课次</string>
+    <string name="text_order_course_sel_length">每次课时长</string>
+    <string name="text_order_course_time_length_tip">选择单次课上课时长</string>
+
+    <string name="text_order_total_time">共计%s小时</string>
+    <string name="text_order_total_amount">总额：</string>
+    <string name="text_next_step">下一步</string>
+
+    <string name="text_get_teacher_info_fail">获取老师信息失败</string>
+
+    <!-- 设置时间 -->
+    <string name="title_order_set_time">上课时间</string>
+    <string name="text_order_course_time_length">每次课时</string>
+    <string name="text_order_course_set_time">选择首次意向上课时间</string>
+    <string name="text_order_dispositional_time">意向上课时间</string>
+    <string name="text_order_time_tip">每次上课时间都可以修改</string>
+    <string name="text_order_time_reset">清空时间</string>
+    <string name="text_order_time_reset_count">修改课程次数</string>
+
+    <string name="text_order_time_list_ordinal">第%d次</string>
+    <string name="text_order_refund_tip">随时退 - 安心购买，随意退款  查看详情</string>
+    <string name="text_order_deposit_activity">现在充值送%d次课低门槛购买特权 去充值</string>
+
+    <!-- 设置时间 新版 -->
+    <string name="text_order_course_time_set_circle">设置授课频率</string>
+    <string name="text_order_course_time_circle_format">每周%d次</string>
+    <string name="text_order_course_time_set_circle_time">请设置前%d次课程意向上课时间</string>
+
+    <string name="text_order_course_time_circle_time_in_sequence">请按顺序设置上课周期时间</string>
+    <string name="text_order_course_time_circle_conflict">前%d次课的上课时间相差应在7天之内</string>
+
+    <string name="text_set">请设置</string>
+
+
+    <!-- 下单、续课 -->
+    <string name="text_order_teacher">授课老师</string>
+    <string name="text_order_course_grade">科目年级</string>
+    <string name="text_order_course_type">课程类型</string>
+    <string name="text_order_site_type">授课方式</string>
+    <string name="text_order_site">上课地址</string>
+    <string name="text_order_time">@string/text_order_dispositional_time</string>
+    <string name="text_order_coupons">奖学券</string>
+    <string name="text_unused">未使用</string>
+
+    <string name="text_select_course_grade">请选择科目年级</string>
+    <string name="text_select_site_type">请选择授课方式</string>
+    <string name="text_select_site">请选择上课地址</string>
+    <string name="text_order_address_online">使用在线工具授课</string>
+
+    <string name="text_order_course_unit_price">课程单价</string>
+    <string name="text_order_course_new_price">手动改价</string>
+    <string name="text_order_course_alter_price_tip">改价说明</string>
+    <string name="text_order_course_third_site_price">@string/site_type_third_home</string>
+    <string name="text_order_course_count">课次课时</string>
+    <string name="text_order_course_total_hours">总课时数</string>
+    <string name="text_order_pay">去支付</string>
+    <string name="text_order_audition">预约</string>
+
+    <string name="text_order_course_count_and_length">%1$d次x%2$s小时</string>
+    <string name="text_price_deduction_amount">-￥%1$s</string>
+    <string name="text_price_pay_amount">应付:￥%s</string>
+    <string name="text_order_deduction">（优惠￥%s）</string>
+
+    <string name="text_order_deduction_of_course_pack">课程包优惠</string>
+    <string name="text_order_deduction_of_content_pack">精选课程优惠</string>
+
+    <string name="text_content_pack_material">课程资料</string>
+    <string name="text_content_pack_material_tip">所有课程全部上完后课程资料费会退还</string>
+
+    <string name="text_order_no_available_coupons">暂无可用奖学券</string>
+    <string name="text_order_count_available_coupons">可使用%d张</string>
+    <string name="text_order_coupons_unavailable_for_course_pack">不可用于课程优惠包</string>
+    <string name="text_order_coupons_unavailable_for_content_pack">不可用于精选课程</string>
+
+    <string name="text_alter_price">改价</string>
+
+    <!-- 新版下单流程 end-->
+
+    <!-- 设置时间周期 v3 -->
+    <string name="title_content_pack_order">购买精选课程</string>
+    <string name="title_favourable_pack_order">购买优惠课程包</string>
+
+    <string name="text_sel_course_time">选择上课时间</string>
+    <string name="text_sel_time_circle">选择每周几上课</string>
+    <string name="text_sel_time_multiple">（可多选）</string>
+    <string name="text_sel_time_circle_count">一周%d次</string>
+    <string name="text_sel_time_optional">自定义</string>
+
+    <string name="text_sel_time_week_formatter">每%s</string>
+    <string name="text_sel_time_circle_formatter">%1$s-%2$s (%3$s开始)</string>
+    <string name="text_sel_time_circle_select">选择首次时间</string>
+    <string name="text_sel_time_generate_list">生成课表</string>
+
+    <string name="text_format_total_time">（共%d次课）</string>
+
+    <!-- 选时间(日历)v3 -->
+    <string name="text_title_circle_time_with_week">选择每%s上课时间</string>
+    <string name="text_title_reset_time">修改上课时间</string>
+    <string name="text_title_modify_time_with_index">修改第%d次上课时间</string>
+    <string name="text_title_optional_time_odd">还剩%d次课未选择</string>
+    <string name="text_title_optional_time_filled">课程时间选择完成</string>
+
+    <string name="text_sel_time_total_count">共%d次课</string>
+    <string name="text_sel_time_selected_count">已选择%d次课</string>
+
+    <string name="text_interval_half_hour">精确到30分</string>
+    <string name="text_no_invalid_block">当日已无可选时间</string>
+
+    <string name="text_optional_time_ordinal">第%d节课</string>
+
+    <string name="text_time_selected">已选时间</string>
+    <string name="text_clear">清空</string>
+
+    <!-- status -->
+    <string name="text_block_extend_selecting">\n上课</string>
+    <string name="text_block_extend_selected">\n已选中</string>
+    <string name="text_block_extend_teacher_occupied">\n老师有课</string>
+    <string name="text_block_extend_student_occupied">\n学生有课</string>
+
+    <!-- 选时间 结果v3 -->
+    <string name="text_confirm_course_time">确认上课时间</string>
+    <string name="text_sel_time_reset">重新选择</string>
+
+    <string name="text_dialog_exit_confirm_title">确认放弃当前已选的时间？</string>
+
+    <string name="text_dialog_clear_confirm_title">清空已选时间</string>
+
+    <string name="text_dialog_reset_confirm_title">重新选择时间</string>
+    <string name="text_dialog_reset_confirm_content">重新选择将会清空当前已选的时间</string>
+
+    <string name="text_toast_time_used">此时段已有\n课程安排</string>
+    <string name="text_toast_time_not_enough">距下节课程\n时间过近</string>
+    <string name="text_toast_optional_time_satisfied">您已经添加了\n%d次课时间</string>
+
+    <!-- 设置时间周期 v3 end -->
+    <string name="text_winter_pack_time_limited">超出寒假包限定的上课时间范围（%1$s - %2$s） 请重新调整课程时间。</string>
+    <string name="text_winter_pack_time_error_count">共有%1$d次课程超出寒假包限定的上课时间范围（%2$s - %3$s） 请重新调整课程时间。</string>
+
+    <!--老师被封禁-->
+    <string name="default_remind_teacher_is_colse_down_can_not_renew">老师的帐号被封禁，不能续课</string>
+    <string name="default_remind_teacher_is_put_off">该老师暂无法接单</string>
+
+    <!--课程详情&评价-->
+    <string name="text_course_appraise_title">对本次课的评价</string>
+    <string name="text_course_teacher_feedback">老师反馈</string>
+    <string name="text_course_reply_appraise">回复家长</string>
+    <string name="text_course_appraise_my_feedback">我的回评</string>
+    <string name="text_base_appraise_total_score">总体&#058;</string>
+    <string name="text_base_appraise_service_score">服务&#058;&#032;&#032;%.1f</string>
+    <string name="text_base_appraise_effect_score">效果&#058;&#032;&#032;%.1f</string>
+    <string name="text_base_appraise_teacher_reply_time_format">回评时间：MM月dd日 HH:mm</string>
+    <string name="text_base_appraise_teach_reply_tip">您的回复将会展示在老师个人主页</string>
+    <string name="text_base_appraise_teach_reply_hint">给家长一个贴心的回复吧~</string>
+    <string name="text_fabiao">发表</string>
+
+    <!-- 选择科目年级 -->
+    <string name="grade_course_title">科目年级</string>
+    <string name="fixed_course_title">授课科目</string>
+    <string name="select_course_title">选择科目</string>
+    <string name="select_grade_title">选择年级</string>
+
+    <!-- 选择课程类型-->
+    <string name="course_type_title">课程类型</string>
+    <string name="course_type_1v1">1对1</string>
+    <string name="course_type_1v2">朋友团 1对2</string>
+    <string name="course_type_1v3">朋友团 1对3</string>
+    <string name="course_type_1v4">朋友团 1对4</string>
+    <string name="course_type_1v5">朋友团 1对5</string>
+    <string name="course_type_unknown">未知的课程类型</string>
+    <string name="course_type_tips">注：朋友团授课方式不支持轻轻书房</string>
+
+    <!-- 授课方式-->
+    <string name="site_type_title">@string/text_order_site_type</string>
+    <string name="site_type_student_home">老师上门</string>
+    <string name="site_type_teacher_home">学生上门</string>
+    <string name="site_type_third_home">轻轻书房</string>
+    <string name="site_type_online">在线授课</string>
+    <string name="site_type_unlimited">不限授课方式</string>
+
+    <!--教学心得-->
+    <string name="teacher_information_text">教学心得</string>
+    <string name="teacher_information_delete">删除</string>
+    <string name="teacher_information_edit">编辑</string>
+    <string name="teacher_information_share">分享</string>
+    <string name="teacher_information_create">写心得</string>
+    <string name="teacher_information_empty_tips">教学心得将显示在您的主页，家长都可见到</string>
+    <string name="teacher_information_delete_title">确认删除</string>
+    <string name="teacher_information_delete_content">删除教学心得后将无法恢复</string>
+    <string name="teacher_information_type_unknown_edit">无法编辑这条教学心得</string>
+    <string name="teacher_information_type_unknown_share">无法分享这条教学心得</string>
+    <!--dialog-->
+    <string name="txt_help_me_find_teacher">帮我选</string>
+    <!--搜索问答-->
+    <string name="text_search_question_hint">搜索关键字</string>
+    <string name="text_ask_specialist">向专家提问</string>
+    <string name="text_not_find_result">还没有和“%s”有关内容</string>
+
+    <!-- 订单分享相关-->
+    <string name="order_share_title_student">找人代付</string>
+    <string name="order_share_title_teacher">订单分享老师端标题</string>
+    <string name="order_share_title_ta">通知家长付款</string>
+    <string name="order_share_message_student">可以通过以下方式发送给您的好友帮您代付哦\n
+如果订单产生退款，钱将退至您的钱包中</string>
+    <string name="order_share_message_teacher">订单分享老师端内容</string>
+    <string name="order_share_message_ta">将订单分享给家长 %1$s (%2$s)，\n家长可以直接付款哦～</string>
+
+    <string name="base_course_wvp_type">寒假基础包</string>
+    <string name="renew_course_wvp_type">寒假续课包</string>
+    <string name="class_not_ready_class_status">报名中</string>
+    <string name="class_ready_not_full_class_status">已开组</string>
+    <string name="class_ready_full_class_status">已满组</string>
+    <string name="closed_class_status">已结束</string>
+
+    <!-- 城市选择-->
+    <string name="txt_search_city">输入城市名称或拼音查询</string>
+    <string name="select_city_title">选择城市</string>
+    <string name="location_city_text">定位城市</string>
+    <string name="location_city_error_text">定位失败，请点击重试</string>
+    <string name="locating_city_text">定位中</string>
+    <string name="city_list_text">热门城市</string>
+    <string name="current_city_text">当前访问城市:</string>
+    <string name="unknown_city_text">--</string>
+    <string name="new_person_discount">新人新享</string>
+    <string name="no_commission">免佣金</string>
+
+</resources>

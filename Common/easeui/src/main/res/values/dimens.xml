@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_item_height">60dp</dimen>
+    <dimen name="contact_icon_size">52dp</dimen>
+    <dimen name="contact_partition_head_height">18dp</dimen>
+    <dimen name="contact_partition_item_height">45dp</dimen>
+
+    <dimen name="row_voice_bubble_min_width">72dp</dimen>
+
+    <dimen name="row_bubble_min_height">30dp</dimen>
+    <dimen name="row_bubble_max_width">210dp</dimen>
+    <dimen name="row_voice_bubble_min_height">30dp</dimen>
+    <dimen name="row_voice_bubble_max_width">210dp</dimen>
+    <dimen name="row_voice_increase_width">9dp</dimen>
+    <dimen name="row_status_min_height">@dimen/row_bubble_min_height</dimen>
+</resources>

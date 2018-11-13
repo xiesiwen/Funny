@@ -1,0 +1,17 @@
+/alipay_lib/gen
+/alipay_lib/assets
+/alipay_lib/bin
+/LogCollector/assets
+/QingQingBase/gen
+/QingQingBase/assets
+/QingQingBase/bin
+/v7/appcompat/gen
+/v7/appcompat/assets
+/v7/appcompat/bin
+/alipay_lib/build
+/LogCollector/build
+/QingQingBase/build
+/v7/appcompat/build
+*.iml
+*.prefs
+QingQingBase/tools/protobuf_gen/convertWrapper.bat

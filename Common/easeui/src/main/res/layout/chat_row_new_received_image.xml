@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChatRowItemStyle">
+
+    <TextView
+        android:id="@+id/tv_msg_time"
+        style="@style/ChatRowMsgTimeStyle"
+        android:visibility="gone" />
+
+    <com.qingqing.base.view.AsyncImageViewV2
+        android:id="@+id/img_avatar"
+        style="@style/ChatRowAvatarStyle"
+        android:layout_below="@+id/tv_msg_time"
+        android:layout_marginRight="6dp" />
+
+    <LinearLayout
+        android:id="@+id/container_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_msg_time"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_user_role"
+            style="@style/ChatRowUserRoleStyle"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            style="@style/ChatRowNickStyle"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_user_info"
+        android:layout_toRightOf="@+id/img_avatar">
+
+        <com.qingqing.base.nim.view.BubbleLayout
+            android:id="@+id/layout_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp">
+
+            <com.qingqing.base.nim.view.BubbleImageViewV2
+                android:id="@+id/bubble_image"
+                style="@style/BubbleLeftImageStyle"
+                android:layout_centerInParent="true" />
+
+        </com.qingqing.base.nim.view.BubbleLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/layout_bubble">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_resend"-->
+            <!--style="@style/ChatRowResendStyle"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:visibility="gone" />-->
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/ChatRowProgressBarStyle"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

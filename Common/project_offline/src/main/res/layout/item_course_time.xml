@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_12"
+    android:paddingTop="@dimen/dimen_12">
+
+    <TextView
+        android:id="@+id/item_course_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_dark_deep"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@+id/item_course_time_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/font_size_16" />
+
+    <ImageView
+        android:id="@+id/item_course_time_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:src="?attr/settingRightArrow"
+        android:visibility="visible" />
+</LinearLayout>

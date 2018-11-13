@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tv_text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:padding="@dimen/dimen_5"
+        tools:text="432|2000" />
+
+    <com.qingqing.base.view.editor.LimitEditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="@string/text_hint_input_announcement"
+        android:lineSpacingMultiplier="1.2"
+        android:minHeight="400dp"
+        android:padding="@dimen/dimen_12"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_14"
+        tools:text="【重要通知】作为国内最大的上门家教服务机构，轻轻家教一直致力于打造优质的教学与服务标准，为孩子提供更加亲密、透明、高效的辅导体验。为加强平台老师的教学常规管理工作，提高教学服务质量，提升家长满意度，我们正在强力升级上海轻轻老师教研中心，逐步打造行业顶尖的轻轻教研团队,期待这是一次轻轻与您共同的跨越！详情猛戳：https:" />
+
+</FrameLayout>

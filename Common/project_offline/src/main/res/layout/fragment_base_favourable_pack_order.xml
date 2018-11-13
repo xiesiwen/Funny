@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/bg_pay_paper1">
+
+            <include layout="@layout/layout_teacher_info_for_order" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:background="@drawable/bg_pay_paper2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_6"
+                android:paddingTop="@dimen/dimen_6">
+
+                <TextView
+                    android:id="@+id/fragment_base_fp_order_tv_site_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/text_course_packet_rule_online"
+                    android:textColor="@color/gray_dark_deep"
+                    android:textSize="@dimen/font_size_16" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/fragment_base_fp_order_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_3"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layerType="software"
+                android:src="@drawable/bg_dashed_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fragment_base_fp_order_tv_refund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:drawableLeft="@drawable/icon_refund"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_horizontal"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--新用户优惠提示-->
+        <include layout="@layout/view_first_order_coupon_des" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_base_fp_order_btn"
+        style="@style/Sd_BottomWholeWidthOrangeSolidButton"
+        android:layout_alignParentBottom="true"
+        android:text="@string/text_sel_course_time" />
+
+</RelativeLayout>

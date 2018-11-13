@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_rect_gray_light_solid"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/btn_login_search"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                >
+
+                <com.qingqing.base.view.editor.LimitEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search_via_phone"
+                    android:imeOptions="actionSearch"
+                    android:inputType="number"
+                    android:textColorHint="@color/gray"
+                    android:textSize="12sp">
+
+                    <requestFocus/>
+                </com.qingqing.base.view.editor.LimitEditText>
+
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/homepage_close"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_5"
+            android:text="@string/cancel"
+            tools:textColor="@color/primary_blue"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/divider_list_color"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_search_teacher_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_12"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+
+        <com.qingqing.base.view.AsyncImageViewV2
+            android:id="@+id/iv_avatar"
+            style="@style/DefaultCircleHeadStyle"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            tools:src="@drawable/icon_auth_id"
+            />
+
+        <TextView
+            android:id="@+id/tv_nick_and_teach_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            tools:text="老师昵称——教龄"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_nick_and_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_avatar"
+            android:maxLines="1"
+            android:layout_alignLeft="@id/tv_nick_and_teach_age"
+            tools:text="老师昵称——手机号"
+            />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_add"
+            tools:textColor="@color/primary_blue"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_user_not_exits"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/text_search_chat_member_result_member_non_exit"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_search_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="64dp"
+        android:padding="@dimen/dimen_12"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_add_member_search"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_search_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@id/iv_add_member_search"
+            tools:text="搜索"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
