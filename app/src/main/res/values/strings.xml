@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FunnyMan</string>
+    <string name="video">视频</string>
+    <string name="chat">聊天</string>
+    <string name="shot">拍摄</string>
+    <string name="discovery">发现</string>
+    <string name="me">我</string>
 </resources>

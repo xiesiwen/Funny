@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Funny.iml" filepath="$PROJECT_DIR$/Funny.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Common/QingQingBase/QingQingBase.iml" filepath="$PROJECT_DIR$/Common/QingQingBase/QingQingBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Common/base/base.iml" filepath="$PROJECT_DIR$/Common/base/base.iml" />
     </modules>
   </component>
 </project>

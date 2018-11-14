@@ -1,1 +1,3 @@
-include ':app'
+include ':app', ':base', ':QingQingBase'
+project(':base').projectDir = new File('Common/base')
+project(':QingQingBase').projectDir = new File('Common/QingQingBase')
