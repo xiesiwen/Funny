@@ -1,4 +1,4 @@
-package com.qingqing.funnyman.ui;
+package com.qingqing.funnyman.ui.main;
 
 import com.qingqing.qingqingbase.ui.BaseFragment;
 
